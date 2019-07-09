@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Функциональное питание для котов "Cat-energy"</title>
+  <meta name="title" content="Функциональное питание для котов «Cat-energy»">
+  <meta name="description" content="Лучшее функциональное питание для котов, отличное качество">
+  <meta name="keywords" content="Магазин, функциональное питание, для котов">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Функциональное питание для котов «Cat-energy»">
+  <meta property="og:description" content="Лучшее функциональное питание для котов, отличное качество">
+<!--  <meta property="og:image" content="https://.../assets/site-meta-og-image.PNG">-->
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="">
+  <meta property="twitter:title" content="Функциональное питание для котов «Cat-energy»">
+  <meta property="twitter:description" content="Лучшее функциональное питание для котов, отличное качество">
+<!--  <meta property="twitter:image" content="https://.../assets/site-meta-og-image.PNG">-->
+
+  <!-- Favicon icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- https://scottjehl.github.io/picturefill/-->
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="vendor/picturefill.min.js" async></script>
+</head>
+
+<body>
+
+  <!--  begin login-modal-->
+  <div class="login-modal">
+    <h2 class="login-modal__title">Личный кабинет</h2>
+    <p class="login-modal__text">Введите свой логин и пароль, чтобы войти</p>
+    <form class="login-modal__form" action="#" method="post">
+      <label for="user-login-field" class="sr-only">Логин</label>
+      <input class="login-modal__input login-modal__input-text" id="user-login-field" type="text"
+             name="user-login"
+             placeholder="Логин" aria-label="user-login" autocomplete="off" spellcheck="false"
+      autofocus required>
+      <label for="login-modal-user-password-field" class="sr-only">Пароль</label>
+      <input class="login-modal__input login-modal__input-password" id="login-modal-user-password-field" type="password"
+             name="user-password" placeholder="Пароль"
+             aria-label="user-password"
+             autocomplete="off" spellcheck="false" required>
+      <a class="login-modal__restore-link" href="#">Я забыл пароль!</a>
+      <button class="button login-modal__submit-button" type="submit">Войти
+      </button>
+      <button class="button login-modal__close-button" type="button">Закрыть
+      </button>
+      <a class="login-modal__registration-link" href="registration.html">Регистрация</a>
+    </form>
+  </div>
+  <!--  end login-modal-->
+
+  <!--  begin registration-modal-->
+  <div class="registration-modal">
+    <h2 class="registration-modal__title">Личный кабинет</h2>
+    <p class="registration-modal__text">Введите свои имя, E-mail и пароль для регистрации</p>
+    <form class="registration-modal__form" action="#" method="post">
+      <label for="user-name-field"  class="sr-only">Имя</label>
+      <input class="registration-modal__input registration-modal__input-text" id="user-name-field" type="text"
+             name="user-name"
+             placeholder="Имя" aria-label="user-name" autocomplete="off" spellcheck="true" required>
+      <label for="user-email-field"  class="sr-only">E-mail</label>
+      <input class="registration-modal__input registration-modal__input-email" id="user-email-field" type="email"
+             name="user-email"
+             placeholder="E-mail" aria-label="user-email" autocomplete="off" spellcheck="false"
+             required>
+      <label for="user-password-field"  class="sr-only">Пароль</label>
+      <input class="registration-modal__input registration-modal__input-password" id="user-password-field" type="password"
+             name="user-password" placeholder="Пароль"
+             aria-label="user-password"
+             autocomplete="off" required>
+      <label for="user-password-repeat-field"  class="sr-only">Повторите пароль</label>
+      <input class="registration-modal__input registration-modal__input-password" id="user-password-repeat-field" type="password"
+             name="user-password-repeat" placeholder="Повторите пароль"
+             autocomplete="off" required>
+      <button class="button registration-modal__submit-button" type="submit">Отправить
+      </button>
+      <button class="button registration-modal__close-button" type="button">Закрыть
+      </button>
+    </form>
+  </div>
+  <!--end registration-modal-->
+
+  <div class="modal-overlay"></div>
+
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
