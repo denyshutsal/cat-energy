@@ -1,0 +1,20 @@
+@import 'variables';
+
+/* ==========================================================================
+buttons
+========================================================================== */
+
+.button {
+  display: inline-block;
+  padding: 0;
+  border: solid 1px transparent;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
