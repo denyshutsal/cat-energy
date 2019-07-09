@@ -1,0 +1,14 @@
+/* ==========================================================================
+mixins
+========================================================================== */
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin clear-link {
+  overflow: hidden;
+  text-decoration: none;
+}
