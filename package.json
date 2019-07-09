@@ -1,0 +1,70 @@
+{
+  "name": "cat-energy",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Адаптивная версия сайта cat-energy",
+  "contributors": [
+    {
+      "name": "Denys Hutsal",
+      "email": "denyshutsal@gmail.com",
+      "url": "https://github.com/denyshutsal/cat-energy.git"
+    }
+  ],
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
+    "browserslist": "^4.6.1",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-terser": "^1.2.0",
+    "gulp-webp": "^4.0.1",
+    "jquery": "^3.4.1",
+    "picturefill": "^3.0.3",
+    "semistandard": "^13.0.1",
+    "snazzy": "^8.0.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead",
+    "ie 11"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "useBuiltIns": "usage"
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "test": "semistandard --verbose | snazzy",
+    "csslint": "stylelint \"source/sass/**/*.scss\" || exit 0",
+    "clean": "gulp clean",
+    "start": "gulp start",
+    "build": "gulp build"
+  }
+}
