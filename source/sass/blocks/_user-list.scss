@@ -1,0 +1,91 @@
+@import '../variables';
+
+/* ==========================================================================
+user-list
+========================================================================== */
+
+.icon--header-login {
+  position: absolute;
+  top: 18px;
+  left: 21px;
+  width: 16px;
+  height: 16px;
+  fill: $color-2;
+  color: $color-2;
+}
+
+.user-list__login {
+  position: relative;
+  display: block;
+  padding: 17px 21px 17px 49px;
+  line-height: 18px;
+  color: $color-2;
+  background-color: $background-color-4;
+  border-top: 1px solid $background-color-6;
+  border-bottom: 1px solid $background-color-6;
+  text-decoration: none;
+
+  &:hover,
+  &:hover .icon--header-login,
+  &:focus,
+  &:focus .icon--header-login {
+    background-color: $background-color-7;
+  }
+
+  &:active,
+  &:active .icon--header-login {
+    color: $color-6;
+    fill: $color-6;
+    background-color: #a5a5a5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .icon--header-login {
+    top: 12px;
+    left: 12px;
+  }
+
+  .user-list__login {
+    width: 40px;
+    height: 38px;
+    padding: 0;
+    font-size: 0;
+    background-color: $background-color-base;
+    border: none;
+
+    &:hover,
+    &:hover .icon--header-login,
+    &:focus,
+    &:focus .icon--header-login {
+      color: $color-5;
+      fill: $color-5;
+      background-color: inherit;
+      border: none;
+    }
+
+    &:active,
+    &:active .icon--header-login {
+      color: $color-6;
+      fill: $color-6;
+      background-color: inherit;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .icon--header-login {
+    color: $color-3;
+    fill: $color-3;
+  }
+
+  .user-list__login {
+    width: auto;
+    padding-right: 10px;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 1.9;
+    color: $color-3;
+    text-transform: uppercase;
+  }
+}
