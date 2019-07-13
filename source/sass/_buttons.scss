@@ -18,24 +18,41 @@ buttons
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-//.button-default {
-//  width: 100%;
-//  height: 42px;
-//  padding: 7px 18px 6px;
-//  border-radius: 8px;
-//  font-family: $font-family-base;
-//  font-size: $font-size-base;
-//  font-weight: $font-weight-base;
-//  line-height: $line-height-base;
-//  text-transform: uppercase;
-//  letter-spacing: 1px;
-//}
-
 //.button-mobile {
+//  width: $btn-mob--width-base;
+//  height: $btn-mob--height-base;
+//  padding: $btn-mob--padding-base;
+//  border-radius: $btn-mob--border-radius-base;
+//  font-family: $btn-mob--font-family-base;
+//  font-size: $btn-mob--font-size-base;
+//  font-weight: $btn-mob--font-weight-base;
+//  line-height: $btn-mob--line-height-base;
+//  text-transform: $btn-mob--text-transform-base;
+//  letter-spacing: $btn-mob--letter-spacing-base;
 //}
 
 //.button-tablet {
+//  width: $btn-tb--width-base;
+//  height: $btn-tb--height-base;
+//  padding: $btn-tb--padding-base;
+//  border-radius: $btn-tb--border-radius-base;
+//  font-family: $btn-tb--font-family-base;
+//  font-size: $btn-tb--font-size-base;
+//  font-weight: $btn-tb--font-weight-base;
+//  line-height: $btn-tb--line-height-base;
+//  text-transform: $btn-tb--text-transform-base;
+//  letter-spacing: $btn-tb--letter-spacing-base;
 //}
 
 //.button-desktop {
+//  width: $btn-dt--width-base;
+//  height: $btn-dt--height-base;
+//  padding: $btn-dt--padding-base;
+//  border-radius: $btn-dt--border-radius-base;
+//  font-family: $btn-dt--font-family-base;
+//  font-size: $btn-dt--font-size-base;
+//  font-weight: $btn-dt--font-weight-base;
+//  line-height: $btn-dt--line-height-base;
+//  text-transform: $btn-dt--text-transform-base;
+//  letter-spacing: $btn-dt--letter-spacing-base;
 //}
