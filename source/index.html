@@ -137,31 +137,30 @@
 
   <!--  begin page-main-->
   <main class="page-main">
+    <!--  begin banner-->
+    <div class="banner">
+      <h1 class="banner__title">Функциональное питание для котов</h1>
+      <p class="banner__text">Занялся собой? Займись котом!</p>
+      <picture>
+        <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/webp/product-desktop.webp 1x, img/webp/product-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/webp/product-tablet.webp 1x, img/webp/product-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/webp/product-mobile.webp 1x, img/webp/product-mobile@2x.webp 2x">
+
+        <source media="(min-width: 1440px)"
+                srcset="img/product-desktop.png 1x, img/product-desktop@2x.png 2x">
+        <source media="(min-width: 768px)"
+                srcset="img/product-tablet.png 1x, img/product-tablet@2x.png 2x">
+        <img class="banner__img" src="img/product-mobile.png"
+             srcset="img/product-mobile@2x.png 2x" width="280" height="270" alt="Фотография товара">
+      </picture>
+      <a class="button banner__button" href="#">Подобрать программу</a>
+    </div>
+    <!--  end banner-->
+
     <!-- begin container -->
     <div class="container">
-      <h1 class="page-main__title">Функциональное питание для котов</h1>
-      <p class="page-main__text">Занялся собой? Займись котом!</p>
-
-      <!--  begin page-main__banner-->
-      <div class="page-main__banner">
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/webp/product-desktop.webp 1x, img/webp/product-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/webp/product-tablet.webp 1x, img/webp/product-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/webp/product-mobile.webp 1x, img/webp/product-mobile@2x.webp 2x">
-
-          <source media="(min-width: 1440px)"
-                  srcset="img/product-desktop.png 1x, img/product-desktop@2x.png 2x">
-          <source media="(min-width: 768px)"
-                  srcset="img/product-tablet.png 1x, img/product-tablet@2x.png 2x">
-          <img class="page-main__banner-img" src="img/product-mobile.png"
-               srcset="img/product-mobile@2x.png 2x" alt="Фотография товара">
-        </picture>
-        <a class="button page-main__banner-button" href="#">Подобрать программу</a>
-      </div>
-      <!--  end page-main__banner-->
-
       <!--  begin program -->
       <article class="program">
         <h2 class="program__title">Похудение</h2>
@@ -235,7 +234,7 @@
           <source media="(min-width: 768px)"
                   srcset="img/cat-before-tablet-desktop.png 1x, img/cat-before-tablet-desktop@2x.png 2x">
           <img class="case__cat-img case__cat-img--before" src="img/cat-before-mobile.png"
-               srcset="img/cat-before-mobile@2x.png 2x" alt="Фотография кота до программы">
+               srcset="img/cat-before-mobile@2x.png 2x" width="" height="" alt="Фотография кота до программы">
         </picture>
         <picture>
           <source type="image/webp" media="(min-width: 768px)"
@@ -245,7 +244,7 @@
           <source media="(min-width: 768px)"
                   srcset="img/cat-after-tablet-desktop.png 1x, img/cat-after-tablet-desktop@2x.png 2x">
           <img class="case__cat-img case__cat-img--after" src="img/cat-after-mobile.png"
-               srcset="img/cat-after-mobile@2x.png 2x" alt="Фотография кота после программы">
+               srcset="img/cat-after-mobile@2x.png 2x" width="" height="" alt="Фотография кота после программы">
         </picture>
         <div class="case__buttons-wrapper">
           <button class="button case__button case__button--before" type="button">Было</button>
