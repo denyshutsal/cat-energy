@@ -139,22 +139,22 @@
   <main class="page-main">
     <!--  begin banner-->
     <div class="banner">
-      <h1 class="banner__title">Функциональное питание для котов</h1>
-      <p class="banner__text">Занялся собой? Займись котом!</p>
-      <picture>
-        <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/webp/product-desktop.webp 1x, img/webp/product-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/webp/product-tablet.webp 1x, img/webp/product-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/webp/product-mobile.webp 1x, img/webp/product-mobile@2x.webp 2x">
+      <div class="banner__header">
+        <h1 class="banner__title">Функциональное питание для котов</h1>
+        <p class="banner__text">Занялся собой? Займись котом!</p>
+      </div>
+      <div class="banner__picture">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/webp/product-tablet-desktop.webp 1x, img/webp/product-tablet-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/product-mobile.webp 1x, img/webp/product-mobile@2x.webp 2x">
 
-        <source media="(min-width: 1440px)"
-                srcset="img/product-desktop.png 1x, img/product-desktop@2x.png 2x">
-        <source media="(min-width: 768px)"
-                srcset="img/product-tablet.png 1x, img/product-tablet@2x.png 2x">
-        <img class="banner__img" src="img/product-mobile.png"
-             srcset="img/product-mobile@2x.png 2x" width="280" height="270" alt="Фотография товара">
-      </picture>
+          <source media="(min-width: 768px)"
+                  srcset="img/product-tablet-desktop.png 1x, img/product-tablet-desktop@2x.png 2x">
+          <img class="banner__img" src="img/product-mobile.png"
+               srcset="img/product-mobile@2x.png 2x" width="280" height="270" alt="Фотография товара">
+        </picture>
+      </div>
       <a class="button banner__button" href="#">Подобрать программу</a>
     </div>
     <!--  end banner-->
