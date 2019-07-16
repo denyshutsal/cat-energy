@@ -1,0 +1,222 @@
+@import '../variables';
+
+/* ==========================================================================
+about-program
+========================================================================== */
+.about-program {
+  padding: 10px 0 25px;
+}
+
+.about-program__title {
+  margin: 0;
+  padding-bottom: 35px;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: $font-family-base;
+  font-style: $font-style-base;
+  font-weight: $font-weight-base;
+  color: $color-2;
+  text-align: left;
+}
+
+.about-program__list {
+  @include reset-list;
+}
+
+.about-program__item {
+  position: relative;
+  min-height: 60px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: $background-color-2;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &:nth-child(1)::after {
+    top: 16px;
+    left: -62px;
+    width: 26px;
+    height: 29px;
+    background-image: url("../img/leaf.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/leaf@2x.png');
+    }
+  }
+
+  &:nth-child(2)::after {
+    top: 13px;
+    left: -65px;
+    width: 29px;
+    height: 31px;
+    background-image: url("../img/water.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/water@2x.png');
+    }
+  }
+
+  &:nth-child(3)::after {
+    top: 15px;
+    left: -62px;
+    width: 23px;
+    height: 30px;
+    background-image: url("../img/cutlery.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/cutlery@2x.png');
+    }
+  }
+
+  &:nth-child(4)::after {
+    top: 14px;
+    left: -63px;
+    width: 26px;
+    height: 31px;
+    background-image: url("../img/clock.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/clock@2x.png');
+    }
+  }
+}
+
+.about-program__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-family-2;
+  font-style: $font-style-base;
+  font-weight: $font-weight-base;
+  color: $color-base;
+  text-align: left;
+}
+
+.about-program__number {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about-program {
+    padding: 45px 0 55px;
+  }
+
+  .about-program__title {
+    margin: 0;
+    padding-bottom: 65px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .about-program__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: 550px;
+  }
+
+  .about-program__item {
+    position: relative;
+    display: block;
+    width: 45%;
+    height: 230px;
+    margin: 0;
+    padding: 0;
+    padding-top: 115px;
+    padding-right: 15%;
+    z-index: 10;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      background-color: $background-color-2;
+    }
+
+    &:nth-child(1)::after {
+      top: 25px;
+      left: 27px;
+    }
+
+    &:nth-child(2)::after {
+      top: 24px;
+      left: 26px;
+    }
+
+    &:nth-child(3)::after {
+      top: 25px;
+      left: 27px;
+    }
+
+    &:nth-child(4)::after {
+      top: 25px;
+      left: 27px;
+    }
+  }
+
+  .about-program__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about-program__number {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 30%;
+    margin: 0;
+    font-size: 280px;
+    line-height: 205px;
+    font-family: $font-family-base;
+    font-style: $font-style-base;
+    font-weight: $font-weight-base;
+    color: $background-color-4;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-program {
+    padding: 65px 0 50px;
+  }
+
+  .about-program__list {
+    flex-wrap: nowrap;
+    height: 400px;
+  }
+
+  .about-program__item {
+    width: 20%;
+    height: 230px;
+    padding-top: 115px;
+    padding-right: 1%;
+  }
+
+  .about-program__number {
+    right: 0;
+  }
+}
