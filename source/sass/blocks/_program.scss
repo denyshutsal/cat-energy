@@ -1,0 +1,222 @@
+@import '../variables';
+
+/* ==========================================================================
+program
+========================================================================== */
+
+.program {
+  position: relative;
+  padding: 25px 20px 20px;
+  margin-bottom: 20px;
+  background-color: $background-color-4;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: $background-color-2;
+    border-radius: 50%;
+  }
+
+  &:nth-child(odd)::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 40px;
+    height: 50px;
+    background-image: url("../img/svg/cat-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &:nth-child(even)::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    width: 60px;
+    height: 50px;
+    background-image: url("../img/svg/cat-2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.program__title {
+  margin: 5px 0 30px 70px;
+  font-family: $font-family-base;
+  font-size: 24px;
+  line-height: 37px;
+  font-style: $font-style-base;
+  font-weight: $font-weight-base;
+  color: $color-2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.program__text {
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: $font-family-2;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: $font-style-base;
+  font-weight: $font-weight-base;
+  color: $color-base;
+  text-align: left;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program__button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 150px;
+  margin-top: 20px;
+  color: $color-2;
+  font-family: $font-family-base;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: $font-style-base;
+  font-weight: $font-weight-base;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $color-5;
+  }
+
+  &:active {
+    color: $color-6;
+  }
+
+  .icon--right-arrow {
+    width: 24px;
+    height: 11px;
+    margin-left: 10px;
+  }
+
+  &:hover .icon--right-arrow,
+  &:focus .icon--right-arrow {
+    fill: $color-5;
+    margin-left: 20px;
+  }
+
+  &:active .icon--right-arrow {
+    fill: $color-6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding: 80px 275px 60px 50px;
+
+    &::before {
+      top: 90px;
+      left: auto;
+      right: 60px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &:nth-child(odd)::after {
+      top: 85px;
+      left: auto;
+      right: 75px;
+      width: 160px;
+      height: 195px;
+    }
+
+    &:nth-child(even)::after {
+      top: 135px;
+      left: auto;
+      right: 35px;
+      width: 250px;
+      height: 105px;
+    }
+  }
+
+  .program__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 36px;
+  }
+
+  .program__text {
+    padding-bottom: 60px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
+
+  .program__button {
+    width: 210px;
+    margin-top: 0;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .program {
+    width: 570px;
+    padding: 80px 60px 50px;
+    margin: 0;
+
+    &::before {
+      top: 50px;
+      left: 60px;
+      right: auto;
+      width: 100px;
+      height: 100px;
+    }
+
+    &:nth-child(odd)::after {
+      top: 50px;
+      left: 70px;
+      right: auto;
+      width: 80px;
+      height: 95px;
+    }
+
+    &:nth-child(even)::after {
+      top: 75px;
+      left: 40px;
+      right: auto;
+      width: 125px;
+      height: 55px;
+    }
+  }
+
+  .program__title {
+    margin: 0;
+    margin-left: 155px;
+    margin-bottom: 75px;
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .program__text {
+    margin: 0;
+    padding-bottom: 35px;
+  }
+
+  .program__button {
+    width: 195px;
+  }
+}
