@@ -74,18 +74,12 @@ user-list
 }
 
 @media (min-width: $desktop-width) {
-  .icon--header-login {
-    color: $color-3;
-    fill: $color-3;
-  }
-
   .user-list__login {
     width: auto;
     padding-right: 10px;
     padding-left: 40px;
     font-size: 20px;
     line-height: 1.9;
-    color: $color-3;
     text-transform: uppercase;
   }
 }

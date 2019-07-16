@@ -75,14 +75,7 @@ site-list
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__item {
-    &::after {
-      background-color: $background-color-base;
-    }
-  }
-
   .site-list__item a {
     font-size: 20px;
-    color: $color-3;
   }
 }
