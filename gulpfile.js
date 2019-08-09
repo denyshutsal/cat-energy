@@ -61,7 +61,8 @@ function css () {
 function js () {
   return src([
     'source/js/all/hamburger.js',
-    'source/js/all/modal.js'
+    'source/js/all/modal.js',
+    'source/js/all/case.js'
   ])
     .pipe(plumber())
     .pipe(sourcemaps.init())

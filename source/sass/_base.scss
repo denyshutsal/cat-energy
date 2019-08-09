@@ -80,8 +80,20 @@ body {
 
 //---------------------------------------------------------------------------------------------------------------------
 
+/**
+ * Hidden (hide and remove an element from the document layout)
+ */
+
 .hidden {
   display: none !important;
+}
+
+/**
+ * Invisible (hidden elements take up space on the page)
+ */
+
+.invisible {
+  visibility: hidden !important;
 }
 
 /**
