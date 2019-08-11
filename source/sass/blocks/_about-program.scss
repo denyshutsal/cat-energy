@@ -194,19 +194,22 @@ about-program
     font-family: $font-family-base;
     font-style: $font-style-base;
     font-weight: $font-weight-base;
-    color: $background-color-4;
+    color: #eaeaea;
     z-index: -1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-program {
-    padding: 65px 0 50px;
+    padding: 40px 60px;
+    margin-bottom: 20px;
+    background-color: $background-color-4;
   }
 
   .about-program__list {
     flex-wrap: nowrap;
-    height: 400px;
+    height: 300px;
+    min-height: 300px;
   }
 
   .about-program__item {

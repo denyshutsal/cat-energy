@@ -446,7 +446,7 @@ case
     }
   }
 
-  // IE11 костыль, исправляющий вертикальное выравнивание в флекс-контейнере, рэндж слайдера и текста по бокам
+  // IE11 дополнение, исправляющее вертикальное выравнивание в флекс-контейнере, рэндж слайдера и текста по бокам
   @media screen and (-ms-high-contrast: none) {
     [type='range'] {
       margin-top: 33px;
@@ -454,5 +454,76 @@ case
   }
 
   /* End range-slider -------------------------------------------------------------------- */
+}
 
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .container--case {
+    border-top: none;
+  }
+
+  .case {
+    height: 650px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 60px 55px;
+    border-bottom: none;
+  }
+
+  .case__title {
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .case__text {
+    margin: 0;
+    width: 445px;
+    margin-bottom: 50px;
+  }
+
+  .case__result {
+    margin-bottom: 55px;
+  }
+
+  .case__span-bottom {
+    background-color: $background-color-base;
+  }
+
+  .case__text-bottom {
+    margin: 0;
+    width: 365px;
+    text-align: left;
+  }
+
+  .case__text-bottom-amount {
+    margin-left: 65px;
+    font-weight: bold;
+  }
+
+  .case__img-container {
+    width: auto;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin: 0;
+  }
+
+  .case__img-wrapper {
+    position: relative;
+    display: block;
+    width: 708px;
+    height: 517px;
+  }
+
+  .case__range-slider-wrapper {
+    position: absolute;
+    top: 535px;
+    right: 30px;
+  }
 }
