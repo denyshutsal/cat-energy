@@ -4,12 +4,15 @@
 case
 ========================================================================== */
 
+.container--case {
+  padding: 0;
+}
+
 .case {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px 20px 35px;
-  margin-bottom: 20px;
   background-color: $background-color-4;
 }
 
@@ -97,6 +100,10 @@ case
   text-transform: uppercase;
 }
 
+.case__img-container {
+  margin-bottom: 20px;
+}
+
 .case__img-wrapper {
   display: flex;
   flex-direction: row;
@@ -104,7 +111,6 @@ case
   justify-content: center;
   align-items: center;
   height: 255px;
-  margin-bottom: 20px;
 }
 
 .case__buttons-wrapper {
@@ -115,6 +121,10 @@ case
   justify-content: space-between;
   width: 210px;
   height: 25px;
+}
+
+.case__range-slider-wrapper {
+  display: none;
 }
 
 .indicator-bar {
@@ -151,12 +161,298 @@ case
 
   &:hover,
   &:focus {
-    background-color: $background-color-base;
+    color: $color-5;
   }
 
   &:active {
-    color: $color-5;
-    background-color: $background-color-4;
+    color: $color-6;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .container--case {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .case {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 30px 55px;
+    background-color: $background-color-base;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .case__title {
+    margin-right: auto;
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
+
+  .case__text {
+    margin-right: auto;
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case__result-wrapper {
+    max-width: 370px;
+    margin-bottom: 0;
+  }
+
+  .case__result {
+    padding: 12px 12px 0;
+    width: 162px;
+    height: 70px;
+  }
+
+  .case__span-top {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .case__span-bottom {
+    padding: 0;
+    width: 140px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $background-color-base;
+  }
+
+  .case__text-bottom {
+    margin: 0;
+    margin-left: auto;
+    width: 185px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .case__img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .case__img-wrapper {
+    position: relative;
+    display: block;
+    width: 708px;
+    height: 517px;
+  }
+
+  // 1. https://github.com/fregante/object-fit-images
+  .case__cat-img {
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    object-position: left top;
+    font-family: 'object-fit: cover; object-position: left top;'; // 1
+  }
+
+  .case__cat-img--before {
+    z-index: 20;
+    width: 354px;
+    height: 517px;
+  }
+
+  .case__cat-img--after {
+    z-index: 10;
+    width: 708px;
+    height: 517px;
+  }
+
+  .case__buttons-wrapper {
+    display: none;
+  }
+
+  /* Begin range-slider https://github.com/fregante/object-fit-images ------------ */
+
+  .case__range-slider-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+    height: 42px;
+  }
+
+  .case__range-slider-text {
+    display: inline-block;
+    padding: 4px 0;
+    border-bottom: 1px dotted #bebebe;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: $font-family-base;
+    font-style: $font-style-base;
+    font-weight: $font-weight-base;
+    color: $color-2;
+    text-transform: uppercase;
+  }
+
+  .case__range-slider-text--left {
+    margin-right: 20px;
+  }
+
+  .case__range-slider-text--right {
+    margin-left: 20px;
+  }
+
+  // Styling Cross-Browser Compatible Range Inputs with Sass
+  // Github: https://github.com/darlanrod/input-range-sass
+  // Author: Darlan Rod https://github.com/darlanrod
+  // Version 1.5.2
+  // MIT License
+
+  $track-color: #dcdcdc !default;
+  $thumb-color: #68b738 !default;
+
+  $thumb-radius: 50% !default;
+  $thumb-height: 35px !default;
+  $thumb-width: 35px !default;
+  $thumb-border-width: 2px !default;
+  $thumb-border-color: #eaeaea !default;
+
+  $track-width: 430px !default;
+  $track-height: 6px !default;
+  $track-border-width: 2px !default;
+  $track-border-color: #cfd8dc !default;
+
+  $track-radius: 5px !default;
+  $contrast: 5% !default;
+
+  $ie-bottom-track-color: darken($track-color, $contrast) !default;
+
+  @mixin track {
+    cursor: default;
+    height: $track-height;
+    transition: all 0.2s ease;
+    width: $track-width;
+  }
+
+  @mixin thumb {
+    background: $thumb-color;
+    border: $thumb-border-width solid $thumb-border-color;
+    border-radius: $thumb-radius;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: $thumb-height;
+    width: $thumb-width;
+  }
+
+  [type='range'] {
+    -webkit-appearance: none;
+    background: transparent;
+    margin: $thumb-height / 2 0;
+    width: $track-width;
+
+    &::-moz-focus-outer {
+      border: 0;
+    }
+
+    &:focus {
+      outline: 0;
+
+      &::-webkit-slider-runnable-track {
+        background: lighten($track-color, $contrast);
+      }
+
+      &::-ms-fill-lower {
+        background: $track-color;
+      }
+
+      &::-ms-fill-upper {
+        background: lighten($track-color, $contrast);
+      }
+    }
+
+    &::-webkit-slider-runnable-track {
+      @include track;
+
+      background: $track-color;
+      border: $track-border-width solid $track-border-color;
+      border-radius: $track-radius;
+    }
+
+    &::-webkit-slider-thumb {
+      @include thumb;
+
+      -webkit-appearance: none;
+      margin-top: ((-$track-border-width * 2 + $track-height) / 2 - $thumb-height / 2);
+    }
+
+    &::-moz-range-track {
+      @include track;
+
+      background: $track-color;
+      border: $track-border-width solid $track-border-color;
+      border-radius: $track-radius;
+      height: $track-height / 2;
+    }
+
+    &::-moz-range-thumb {
+      @include thumb;
+    }
+
+    &::-ms-track {
+      @include track;
+
+      background: transparent;
+      border-color: transparent;
+      border-width: ($thumb-height / 2) 0;
+      color: transparent;
+    }
+
+    &::-ms-fill-lower {
+      background: $ie-bottom-track-color;
+      border: $track-border-width solid $track-border-color;
+      border-radius: ($track-radius * 2);
+    }
+
+    &::-ms-fill-upper {
+      background: $track-color;
+      border: $track-border-width solid $track-border-color;
+      border-radius: ($track-radius * 2);
+    }
+
+    &::-ms-thumb {
+      @include thumb;
+
+      margin-top: $track-height / 4;
+    }
+
+    &::-ms-tooltip {
+      display: none;
+    }
+
+    &:disabled {
+      &::-webkit-slider-thumb,
+      &::-moz-range-thumb,
+      &::-ms-thumb,
+      &::-webkit-slider-runnable-track,
+      &::-ms-fill-lower,
+      &::-ms-fill-upper {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // IE11 костыль, исправляющий вертикальное выравнивание в флекс-контейнере, рэндж слайдера и текста по бокам
+  @media screen and (-ms-high-contrast: none) {
+    [type='range'] {
+      margin-top: 33px;
+    }
+  }
+
+  /* End range-slider -------------------------------------------------------------------- */
+
+}

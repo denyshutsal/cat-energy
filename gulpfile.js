@@ -62,7 +62,9 @@ function js () {
   return src([
     'source/js/all/hamburger.js',
     'source/js/all/modal.js',
-    'source/js/all/case.js'
+    'source/js/all/case.js',
+    'source/js/all/case-range-slider.js',
+    'source/js/all/ofi.min.js'
   ])
     .pipe(plumber())
     .pipe(sourcemaps.init())
