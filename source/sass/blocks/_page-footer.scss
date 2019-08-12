@@ -4,7 +4,7 @@
 page-footer
 ========================================================================== */
 
-.container--page-footer {
+.page-footer {
   background-color: $background-color-4;
 }
 
@@ -57,6 +57,11 @@ page-footer
   align-items: center;
   cursor: pointer;
 
+  .icon {
+    color: #666;
+    fill: #666;
+  }
+
   &:hover .icon,
   &:focus .icon {
     fill: $color-4;
@@ -105,8 +110,8 @@ page-footer
   .icon--academy {
     width: 30px;
     height: auto;
-    color: $color-base;
-    fill: $color-base;
+    color: #666;
+    fill: #666;
   }
 
   &:hover .icon--academy,
@@ -118,5 +123,47 @@ page-footer
   &:active .icon--academy {
     fill: #c8e0ba;
     color: #c8e0ba;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+  }
+
+  .page-footer__icon-wrapper {
+    width: 135px;
+    height: auto;
+    border-bottom: none;
+  }
+
+  .page-footer__socials-wrapper {
+    width: 140px;
+    height: auto;
+    border-bottom: none;
+
+    .icon--vk {
+      width: 30px;
+      height: auto;
+    }
+
+    .icon--insta {
+      width: 25px;
+      height: auto;
+    }
+
+    .icon--fb {
+      width: 15px;
+      height: auto;
+    }
+  }
+
+  .page-footer__academy-links-wrapper {
+    width: 170px;
+    height: auto;
   }
 }

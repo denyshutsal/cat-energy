@@ -2479,7 +2479,7 @@ map
 /* ==========================================================================
 page-footer
 ========================================================================== */
-.container--page-footer {
+.page-footer {
   background-color: #f2f2f2;
 }
 
@@ -2533,6 +2533,11 @@ page-footer
   cursor: pointer;
 }
 
+.page-footer__socials-wrapper-link .icon {
+  color: #666;
+  fill: #666;
+}
+
 .page-footer__socials-wrapper-link:hover .icon,
 .page-footer__socials-wrapper-link:focus .icon {
   fill: #8fc46e;
@@ -2578,8 +2583,8 @@ page-footer
 .page-footer__academy-link--ico .icon--academy {
   width: 30px;
   height: auto;
-  color: #444;
-  fill: #444;
+  color: #666;
+  fill: #666;
 }
 
 .page-footer__academy-link--ico:hover .icon--academy,
@@ -2591,4 +2596,40 @@ page-footer
 .page-footer__academy-link--ico:active .icon--academy {
   fill: #c8e0ba;
   color: #c8e0ba;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+  }
+  .page-footer__icon-wrapper {
+    width: 135px;
+    height: auto;
+    border-bottom: none;
+  }
+  .page-footer__socials-wrapper {
+    width: 140px;
+    height: auto;
+    border-bottom: none;
+  }
+  .page-footer__socials-wrapper .icon--vk {
+    width: 30px;
+    height: auto;
+  }
+  .page-footer__socials-wrapper .icon--insta {
+    width: 25px;
+    height: auto;
+  }
+  .page-footer__socials-wrapper .icon--fb {
+    width: 15px;
+    height: auto;
+  }
+  .page-footer__academy-links-wrapper {
+    width: 170px;
+    height: auto;
+  }
 }
