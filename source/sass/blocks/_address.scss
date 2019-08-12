@@ -78,5 +78,7 @@ address
 }
 
 @media (min-width: $desktop-width) {
-
+  .address {
+    display: none;
+  }
 }
