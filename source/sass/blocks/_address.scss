@@ -14,9 +14,15 @@ address
   background-color: $background-color-base;
 }
 
+@media (min-width: 570px) {
+  .address {
+    justify-content: space-around;
+  }
+}
+
 .address__text--left {
   margin: 0;
-  width: 40%;
+  width: 155px;
   font-size: 16px;
   line-height: 20px;
   font-family: $font-family-base;
@@ -29,7 +35,7 @@ address
 
 .address__text--right {
   margin: 0;
-  width: 50%;
+  width: 165px;
   align-self: baseline;
   font-size: 14px;
   line-height: 20px;
@@ -38,4 +44,39 @@ address
   font-weight: $font-weight-base;
   color: $color-base;
   text-align: left;
+}
+
+.address__br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .address {
+    padding: 70px 40px 60px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 910px) {
+    .address {
+      justify-content: space-around;
+    }
+  }
+
+  .address__text--left {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .address__text--right {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .address__br {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }
