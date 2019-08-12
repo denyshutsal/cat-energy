@@ -1,0 +1,41 @@
+@import '../variables';
+
+/* ==========================================================================
+address
+========================================================================== */
+
+.address {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  background-color: $background-color-base;
+}
+
+.address__text--left {
+  margin: 0;
+  width: 40%;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family-base;
+  font-style: $font-style-base;
+  font-weight: $font-weight-base;
+  color: $color-2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.address__text--right {
+  margin: 0;
+  width: 50%;
+  align-self: baseline;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-family-2;
+  font-style: $font-style-base;
+  font-weight: $font-weight-base;
+  color: $color-base;
+  text-align: left;
+}
