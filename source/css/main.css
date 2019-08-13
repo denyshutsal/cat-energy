@@ -1267,7 +1267,7 @@ user-list
 
 @media (min-width: 1440px) {
   .user-list__login {
-    width: auto;
+    width: 110px;
     padding-right: 10px;
     padding-left: 40px;
     font-size: 20px;
@@ -1803,9 +1803,8 @@ about-program
     position: relative;
     display: block;
     width: 45%;
-    height: 230px;
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     padding: 0;
     padding-top: 115px;
     padding-right: 15%;
@@ -2288,12 +2287,11 @@ case
     border-top: none;
   }
   .case {
-    height: 650px;
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 80px 60px 55px;
+    padding: 80px 60px 155px;
     border-bottom: none;
   }
   .case__title {
