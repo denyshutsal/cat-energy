@@ -85,6 +85,7 @@
       <div class="page-header__logo-wrapper">
         <!--  begin page-header__logo -->
         <a class="page-header__logo" href="index.html">
+          <span class="sr-only">Логотип сайта</span>
           <picture>
             <source media="(min-width: 1440px)" srcset="img/svg/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
@@ -93,6 +94,7 @@
           </picture>
         </a>
         <a class="page-header__logo" href="index.html">
+          <span class="sr-only">Логотип сайта</span>
           <svg class="icon icon--cat-energy" width="100" height="18">
             <use xlink:href="#icon-cat-energy"></use>
           </svg>
@@ -271,7 +273,8 @@
           <div class="case__range-slider-container">
             <div class="case__range-slider-wrapper">
               <span class="case__range-slider-text case__range-slider-text--left">Было</span>
-              <input id="case__range-slider" class="case__range-slider" type="range" min="0" max="708" value="354" step="0.01"
+              <label for="case__range-slider" class="sr-only">Ползунок слайдера "до" и "после"</label>
+              <input id="case__range-slider" class="case__range-slider" type="range" name="case__range-slider" min="0" max="708" value="354" step="0.01"
               onchange="ie11Version()">
               <span class="case__range-slider-text case__range-slider-text--right">Стало</span>
             </div>
@@ -297,7 +300,7 @@
         <p class="map-address__text map-address__text--right">ул. Большая Конюшенная, д. 19/8 <br class="map-address__br">
           <br class="map-address__br"> Санкт-Петербург</p>
       </section>
-      <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.3937344997485!2d30.317443167316902!3d59.939406907689545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1562685480652!5m2!1sru!2sua" width="100%" height="365" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+      <iframe class="google-map" title="Our address on Google map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.3937344997485!2d30.317443167316902!3d59.939406907689545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1562685480652!5m2!1sru!2sua" width="100%" height="365" frameborder="0" style="border: 0;" allowfullscreen></iframe>
     </section>
     <!-- end map-->
   </main>
