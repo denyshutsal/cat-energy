@@ -29,6 +29,7 @@ case
 }
 
 .case__text {
+  width: 100%;
   align-self: flex-start;
   margin: 0;
   margin-bottom: 25px;
@@ -178,7 +179,7 @@ case
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 45px 30px 55px;
     background-color: $background-color-base;
@@ -228,7 +229,7 @@ case
     margin-left: auto;
     width: 185px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     text-align: right;
   }
 
@@ -275,6 +276,15 @@ case
   }
 
   /* Begin range-slider https://github.com/fregante/object-fit-images ------------ */
+
+  .case__range-slider-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
   .case__range-slider-wrapper {
     display: flex;
@@ -471,7 +481,7 @@ case
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 40px 60px 55px;
+    padding: 80px 60px 55px;
     border-bottom: none;
   }
 
@@ -483,7 +493,7 @@ case
   .case__text {
     margin: 0;
     width: 445px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .case__result {
