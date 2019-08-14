@@ -27,3 +27,7 @@ Browserslist:
 - maintained node versions
 - not dead
 - ie 11
+
+Lighthouse Audit in Chrome DevTools (mobile & desktop)
+
+![Lighthouse Audit in Chrome DevTools](https://github.com/denyshutsal/cat-energy/blob/master/source/img/lighthouse-audit-chrome-devtools.PNG)
