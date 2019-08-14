@@ -2,7 +2,7 @@
 
 Адаптивная версия сайта "cat-energy" для портфолио (все файлы, включая build папку)
 
-GitHub Pages версия (...)
+GitHub Pages версия (https://denyshutsal.github.io/cat-energy-github-pages/)
 
 В проекте:
 
