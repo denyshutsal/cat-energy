@@ -33,7 +33,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-terser": "^1.2.0",
     "gulp-webp": "^4.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "picturefill": "^3.0.3",
     "semistandard": "^13.0.1",
     "snazzy": "^8.0.0",
