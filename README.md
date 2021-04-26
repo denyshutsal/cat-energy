@@ -1,4 +1,4 @@
-# Cat-energy
+# Cat Energy
 
 [Демо проекта](https://denyshutsal.github.io/cat-energy-github-pages/)
 
