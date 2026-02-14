@@ -1,9 +1,12 @@
 # Cat Energy
 
-[Демо проекта](https://denyshutsal.github.io/cat-energy-github-pages/)
+[GitHub Pages link](https://denyshutsal.github.io/cat-energy.github.io/)
 
-В проекте:
+Lighthouse Audit in Chrome DevTools (mobile & desktop)
 
+![Lighthouse Audit in Chrome DevTools](https://github.com/denyshutsal/cat-energy/blob/master/source/img/lighthouse-audit-chrome-devtools.PNG)
+
+The project uses:
 - Adaptive layout
 - Flexbox
 - BEM naming
@@ -22,7 +25,3 @@ Browserslist:
 - maintained node versions
 - not dead
 - ie 11
-
-Lighthouse Audit in Chrome DevTools (mobile & desktop)
-
-![Lighthouse Audit in Chrome DevTools](https://github.com/denyshutsal/cat-energy/blob/master/source/img/lighthouse-audit-chrome-devtools.PNG)
